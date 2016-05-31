@@ -1,0 +1,384 @@
+@font-face {
+  font-family: 'Beyno';
+  src: url("../fonts/BEYNO.otf"); }
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack.otf"); }
+@font-face {
+  font-family: 'lombok';
+  src: url("../fonts/Lombok.otf"); }
+@font-face {
+  font-family: 'stellar';
+  src: url("../fonts/stellar.otf"); }
+@font-face {
+  font-family: 'arkhip';
+  src: url("../fonts/Arkhip.otf"); }
+@font-face {
+  font-family: 'ailerons';
+  src: url("../fonts/Ailerons.otf"); }
+body {
+  margin: 0;
+  padding: 0; }
+  body .intro-div {
+    width: 100%;
+    font-family: 'lombok';
+    color: #EBCEAC;
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-image: url("../images/bg1.jpg");
+    background-size: 100% 100%;
+    height: 801px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    body .intro-div .name-first {
+      display: none;
+      height: 30px; }
+    body .intro-div .name-last {
+      display: none;
+      margin: 0;
+      height: 30px; }
+    body .intro-div .my-img {
+      z-index: 1;
+      position: relative;
+      top: 30%;
+      left: 0;
+      height: 10%;
+      width: 100%;
+      margin: 3%; }
+    body .intro-div .skills {
+      position: relative;
+      top: -300px;
+      left: 0px;
+      font-size: 40%;
+      color: #78C7C7;
+      visibility: hidden;
+      z-index: 1;
+      padding: 0px;
+      margin: 0px;
+      display: block;
+      margin: auto; }
+    body .intro-div .skills0-img,
+    body .intro-div .skills1-img,
+    body .intro-div .skills2-img,
+    body .intro-div .skills3-img,
+    body .intro-div .skills4-img,
+    body .intro-div .skills5-img,
+    body .intro-div .skills6-img,
+    body .intro-div .skills7-img,
+    body .intro-div .skills8-img {
+      z-index: 1;
+      position: relative;
+      padding: 1px;
+      margin: 20px; }
+    body .intro-div .enter-btn {
+      font-size: 40%;
+      color: white;
+      text-decoration: none;
+      display: none;
+      padding: 10px;
+      border-radius: 10px 10px 10px;
+      position: absolute;
+      top: 400px;
+      left: 665px;
+      text-shadow: 10px 10px 10px black; }
+    body .intro-div .enter-btn:hover {
+      border: none;
+      font-size: 45%;
+      transition: all 0.5s ease;
+      text-shadow: 5px 5px 10px black;
+      color: #EBCEAC; }
+  body .skills-div {
+    height: 809px;
+    width: 100%;
+    background-image: url("../images/bg23.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 801px; }
+    body .skills-div .wm {
+      font-size: 500%;
+      text-align: center;
+      font-family: 'blackjack';
+      text-shadow: 2px 2px 2px darkgreen;
+      width: 0;
+      height: 2em;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      left: 40%;
+      top: 1%;
+      color: black; }
+    body .skills-div .description {
+      height: 30%;
+      width: 40%;
+      color: #585858;
+      font-family: stellar;
+      padding-left: 3%;
+      padding-bottom: 0;
+      letter-spacing: 1px;
+      text-align: center;
+      display: none; }
+      body .skills-div .description p {
+        margin: 2%; }
+      body .skills-div .description .built-with {
+        color: orange; }
+      body .skills-div .description .wm-des {
+        border-bottom: 4px solid darkgrey;
+        padding-bottom: 3%;
+        margin-top: 5%;
+        line-height: 20px;
+        margin-top: 0; }
+      body .skills-div .description .wm-intro {
+        color: orange;
+        font-size: 125%;
+        text-shadow: 1px 1px 0 black;
+        margin: 2%; }
+    body .skills-div .container {
+      height: 32%;
+      width: 35%;
+      margin-left: 5%;
+      max-width: 400%;
+      text-align: center;
+      position: relative;
+      margin-top: 1%; }
+    body .skills-div .container div {
+      width: 99%;
+      height: 99%;
+      display: inline-block;
+      display: none;
+      position: relative;
+      top: 0px; }
+    body .skills-div .container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 10px 10px;
+      box-shadow: 0 0 10px white; }
+    body .skills-div button {
+      position: absolute;
+      margin: 10px;
+      color: white;
+      background-color: #2da668;
+      border-radius: 10px 10px 10px;
+      border: none;
+      visibility: hidden;
+      padding: 5px; }
+    body .skills-div button:hover {
+      padding: 5px;
+      color: whitesmoke;
+      background-color: #127844; }
+    body .skills-div .next {
+      right: 5px;
+      z-index: 1; }
+    body .skills-div .prev {
+      left: 5px;
+      z-index: 1; }
+    body .skills-div .go-to {
+      position: relative;
+      left: -200px;
+      top: -350px;
+      visibility: hidden;
+      background-color: transparent;
+      border-top: 4px solid orange;
+      border-bottom: 4px solid orange;
+      border-radius: 1px 1px 1px;
+      font-size: 130%;
+      font-family: stellar;
+      padding: 10px;
+      color: #585858;
+      text-decoration: none;
+      -webkit-transition: -webkit-transform 0.5s ease;
+      display: inline-block;
+      width: 12%; }
+    body .skills-div .go-to:hover {
+      border-top: 4px solid darkorange;
+      border-bottom: 4px solid darkorange;
+      color: black;
+      -webkit-transform: scale(1.05); }
+    body .skills-div .slide-up-div {
+      position: absolute;
+      top: 100px;
+      left: 80px;
+      width: 35%;
+      height: 5%;
+      text-align: center;
+      font-family: stellar;
+      font-size: 200%; }
+      body .skills-div .slide-up-div .slide-up-intro {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #585858; }
+        body .skills-div .slide-up-div .slide-up-intro:hover {
+          color: green; }
+    body .skills-div .slide-down-div {
+      position: absolute;
+      top: 700px;
+      left: 80px;
+      width: 35%;
+      height: 5%;
+      font-family: stellar;
+      font-size: 200%;
+      text-align: center; }
+      body .skills-div .slide-down-div .slide-down {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #585858; }
+        body .skills-div .slide-down-div .slide-down:hover {
+          color: green; }
+  body .reddit-div {
+    height: 800px;
+    background-image: url("../images/reddit.png");
+    background-size: 100% 100%;
+    position: relative;
+    top: 1610px;
+    overflow: hidden;
+    color: whitesmoke; }
+    body .reddit-div .redd {
+      font-family: beyno;
+      font-size: 150%;
+      text-align: center;
+      text-shadow: 2px 2px 0px #2F4E6F;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      margin: 50px;
+      padding: 0px; }
+      body .reddit-div .redd .imu {
+        color: #0099CC;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: -300px; }
+      body .reddit-div .redd .clone {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        left: 900px;
+        top: -200px;
+        text-shadow: 1px 1px 1px #E15119; }
+    body .reddit-div .redd-desc {
+      font-family: stellar;
+      position: absolute;
+      top: 300px;
+      left: 150px;
+      text-align: center;
+      font-size: 100%;
+      letter-spacing: 1px;
+      display: none; }
+      body .reddit-div .redd-desc .redd-intro {
+        display: block;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E15119; }
+      body .reddit-div .redd-desc .redd-built {
+        text-align: center; }
+        body .reddit-div .redd-desc .redd-built .redd-built-with {
+          color: #0099CC;
+          text-shadow: 1px 1px 1px black;
+          font-size: 120%; }
+      body .reddit-div .redd-desc .slider-container {
+        height: 40px;
+        width: 700px;
+        margin-top: 50px; }
+        body .reddit-div .redd-desc .slider-container .show-slider {
+          height: 100%;
+          width: 100%;
+          display: block;
+          text-align: center;
+          vertical-align: middle; }
+          body .reddit-div .redd-desc .slider-container .show-slider:hover {
+            border: none; }
+          body .reddit-div .redd-desc .slider-container .show-slider span {
+            display: block;
+            color: white;
+            padding: 10px; }
+
+.redd-logo {
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: 700px;
+  left: 1350px;
+  -webkit-transform: rotate(-45deg); }
+
+.rd-slider {
+  max-width: 400%;
+  text-align: center;
+  margin-top: 1%;
+  position: relative;
+  top: 1200px;
+  left: 230px;
+  height: 250px;
+  width: 500px; }
+  .rd-slider div {
+    background-color: black;
+    width: 99%;
+    height: 99%;
+    display: none;
+    position: relative; }
+  .rd-slider img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0 0 1px white; }
+  .rd-slider button {
+    position: absolute;
+    margin: 260px 10px;
+    color: white;
+    background-color: #0099CC;
+    border-radius: 5px 5px 5px;
+    border: none;
+    padding: 5px;
+    width: 70px; }
+  .rd-slider button:hover {
+    color: whitesmoke;
+    background-color: #0F3B5F; }
+  .rd-slider .next1 {
+    right: 5px;
+    z-index: 1; }
+  .rd-slider .prev1 {
+    left: 5px;
+    z-index: 1; }
+
+.go-to1 {
+  font-family: 'stellar';
+  position: relative;
+  left: 950px;
+  top: 55px;
+  background-color: transparent;
+  border-bottom: 2px groove  #0099CC;
+  border-radius: 1px 1px 1px;
+  font-size: 100%;
+  font-family: stellar;
+  padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 1s ease;
+  display: none;
+  width: 11%;
+  letter-spacing: 1px; }
+  .go-to1:hover {
+    -webkit-transform: scale(1.05);
+    border-bottom: 2px groove  #E15119; }
+
+.slide-up-div {
+  width: 15%;
+  height: 5%;
+  position: absolute;
+  top: 7%;
+  left: 75%;
+  margin-right: 5%;
+  font-size: 200%; }
+  .slide-up-div .slide-up {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    color: white; }
+    .slide-up-div .slide-up:hover {
+      color: #0099CC; }
+
+/*# sourceMappingURL=style.css.map */

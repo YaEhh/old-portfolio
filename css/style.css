@@ -25,9 +25,8 @@ body {
 @media (min-width: 300px) {
   .intro-div {
     width: 100%;
-    overflow-x: hidden;
     height: auto;
-    overflow: none;
+    overflow: hidden;
     font-family: 'lombok';
     color: #EBCEAC;
     font-size: 250%;

@@ -26,7 +26,7 @@ body {
   .intro-div {
     width: 100%;
     overflow-x: hidden;
-    height: auto;
+    height: 700px;
     overflow: none;
     font-family: 'lombok';
     color: #EBCEAC;

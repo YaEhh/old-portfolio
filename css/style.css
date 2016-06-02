@@ -92,7 +92,7 @@ body {
       transition: all 0.5s ease;
       text-shadow: 5px 5px 10px black;
       color: #EBCEAC; } }
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .intro-div {
     width: 100%;
     height: auto;

@@ -32,14 +32,14 @@ body {
     // overflow-y:hidden;
 }
 
-@media (min-width:320px) {
+@media (min-width:400px) {
 
     .intro-div {
         width: 100%;
         height: auto;
         font-family: 'lombok';
         color: #EBCEAC;
-        font-size: 250%;
+        font-size: 350%;
         text-align: center;
         text-shadow: 2px 2px 2px black;
         background-image: url('../images/bg1mobile.png');
@@ -74,8 +74,9 @@ body {
         }
         .skills {
             position: relative;
-            top: 30%;
-            left:0px;
+            // top: 100%;
+            // margin:20px;
+            // left:30%;
             font-size: 40%;
             color: #78C7C7;
             visibility: hidden;
@@ -104,12 +105,12 @@ body {
             margin: 1%;
         }
         .enter-btn {
-            font-size: 40%;
+            font-size: 60%;
             color: white;
             // font-family:cursive;
             text-decoration: none;
-            display: none;
-            padding: 10px;
+            // display: none;
+            padding: 0px;
             // border: 1px solid grey;
             border-radius: 10px 10px 10px;
             // position: absolute;
@@ -127,7 +128,7 @@ body {
     }
 }
 
-@media (min-width:700px) {
+@media (min-width:1200px) {
 .intro-div {
     width: 100%;
     height: auto;

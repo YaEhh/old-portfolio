@@ -47,7 +47,7 @@ $(document).ready(function(){
         $(".my-img").append($(" <img class= " + skills[i].cl + " src= " + skills[i].sr + " height='0px'  /> "))
         $('.skills').text(" " + skills[i].name + " ");
         $('.skills').animate({
-          top: "30%",
+          top: "25%",
         },1000);
 
         $(".skills" + i + "-img").animate({
@@ -89,15 +89,13 @@ $(document).ready(function(){
       var currentIndex = 0,
       items = $('.container div');
       itemAmt = items.length;
-      var loopi = 0
+      var loopi = 0;
       function cycleItems() {
         var item = $('.container div').eq(currentIndex);
         items.hide();
-        if (loopi == 0) {
-          item.fadeIn(2000);
-        }
         loopi++
         item.css('display','inline-block');
+        $('.container').animate({left:0},1000);
         setTimeout(function(){
             $('.next, .prev').css('visibility', 'visible');
         },100)
@@ -136,7 +134,6 @@ $(document).ready(function(){
       for (i=0; i <=8; i++ ) {
         $('.skills' + i + '-img').remove();
       }
-
       start();
       $('.skills').show();
     });
@@ -176,7 +173,7 @@ $(document).ready(function(){
       $('.redd-desc').delay(800).fadeIn("slow","swing")
       imu = $('.imu')
       clone = $('.clone')
-      imu.animate({left: "80px"},1000).rotate({endDeg: 360, persist: true, duration:1}).animate({fontSize: "200%"})
+      imu.animate({left: "27%"},1000).rotate({endDeg: 360, persist: true, duration:1}).animate({fontSize: "200%"})
       clone.rotate({endDeg: 90, persist: true, duration: 0.2}).animate({top: '0px'}).rotate({endDeg:0, persist:true},200)
       .animate({left: 175, fontSize:"200%"},600)
 
@@ -226,7 +223,7 @@ $(document).ready(function(){
       $('.slide-up').unbind().click(function(){
         $('html,body').animate({
           scrollTop: $('.skills-div').offset().top
-        })
+        },1000)
       });
     }
 

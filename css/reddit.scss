@@ -1,0 +1,215 @@
+
+
+
+.reddit-div {
+    height: 100%;
+    width:100%;
+    background-image: url("../images/reddit.png");
+    background-size: 100%;
+    position: absolute;
+    top: 200%;
+    overflow: hidden;
+    color: whitesmoke;
+    .redd {
+        font-family: beyno;
+        font-size: 150%;
+        text-align: center;
+        text-shadow: 2px 2px 0px #2F4E6F;
+        // color:whitesmoke;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        margin:3%;
+        padding:0px;
+        height:50px;
+        width:300px;
+
+        .imu{
+            color:#0099CC;
+            display:inline-block;
+            position:absolute;
+            top:0px;
+            left:-100%;
+        }
+
+        .clone{
+            color:white;
+            display:inline-block;
+            position:absolute;
+            left:300%;
+            top: -200%;
+            text-shadow: 1px 1px 1px #E15119;
+        }
+    }
+    .redd-desc {
+        font-family: stellar;
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        text-align: center;
+        font-size: 100%;
+        letter-spacing: 1px;
+        display:none;
+        .redd-intro {
+            display: block;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #E15119;
+        }
+        .redd-built {
+            text-align: center;
+            .redd-built-with {
+                color: #0099CC;
+                text-shadow: 1px 1px 1px black;
+                font-size: 120%;
+            }
+        }
+        .slider-container {
+            height: 40px;
+            width: 700px;
+            // border:1px solid red;
+            margin-top: 50px;
+            // padding:10px;
+            .show-slider {
+                height: 100%;
+                width: 100%;
+                // border:1px solid whitesmoke;
+                // padding-left:75px;
+                // padding-right: 75px;
+                display: block;
+                text-align: center;
+                vertical-align: middle;
+                &:hover {
+                    // box-shadow: 0 0 2px white;
+                    border: none;
+                }
+                span {
+                    // margin-top:10px;
+                    display: block;
+                    color: white;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+
+    .redd-logo {
+        height: 35%;
+        width: auto;
+        position: absolute;
+        top: 120%;
+        left: 110%;
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .rd-slider {
+
+        max-width: 400%;
+        text-align: center;
+        // border: 1px solid white;
+        margin-top: 1%;
+        position: relative;
+        top:1200px;
+        left:230px;
+        height: 250px;
+        width: 500px;
+        // padding-top:200px;
+
+
+        div {
+            background-color:black;
+            width: 99%;
+            height: 99%;
+            // display: inline-block;
+            display: none;
+            // padding:5px;
+            // margin:5px;
+            position: relative;
+            // top:-30px;
+            // top: 800px;
+        }
+         img {
+            // padding:3px;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 10px 10px;
+            box-shadow: 0 0 1px white;
+        }
+        button {
+            position: absolute;
+            margin: 260px 10px;
+            color: white;
+            background-color: #0099CC;
+            border-radius: 5px 5px 5px;
+            border: none;
+            // display:none;
+            padding: 5px;
+            width:70px;
+            // z-index:1;
+        }
+        button:hover {
+            // font-size: 100%;
+            // padding: 5px;
+            color: whitesmoke;
+            background-color: #0F3B5F;
+        }
+        .next1 {
+            right: 5px;
+            z-index: 1;
+        }
+        .prev1 {
+            left: 5px;
+            z-index: 1;
+        }
+    }
+
+    .go-to1 {
+        font-family:'stellar';
+        position: relative;
+        left: 950px;
+        top: 55px;
+        // visibility: hidden;
+        background-color: transparent;
+        // border-top: 2px groove #0099CC;
+        border-bottom: 2px groove  #0099CC;
+        border-radius: 1px 1px 1px;
+        font-size: 100%;
+        font-family: stellar;
+        padding: 10px;
+        // text-shadow: 2px 2px 1px black;
+        color: whitesmoke;
+        text-decoration: none;
+        -webkit-transition: -webkit-transform 1s ease;
+        display: none;
+        width: 11%;
+        letter-spacing:1px;
+        // box-shadow:1px 1px 1px white;
+        &:hover{
+            -webkit-transform: scale(1.05);
+            // font-size:150%;
+            border-bottom: 2px groove  #E15119;
+        }
+    }
+    .slide-up-div{
+        width:15%;
+        height:5%;
+        // border:1px solid white;
+        position:absolute;
+        top: 7%;
+        left:75%;
+        margin-right: 5%;
+        font-size:200%;
+
+        .slide-up{
+            display:block;
+            text-align:center;
+            padding-top:10px;
+            height:100%;
+            width:100%;
+            color:white;
+            &:hover{
+                color:#0099CC;
+            }
+        }
+    }
+}

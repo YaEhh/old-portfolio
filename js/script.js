@@ -49,12 +49,19 @@ $(document).ready(function(){
         $('.skills').animate({
           top: "25%",
         },1000);
-
+        console.log(window.innerWidth);
+        if (window.innerWidth > "400") {
+          heightsk = "50px";
+          widthsk = "50px";
+        } else {
+          heightsk = "40px";
+          widthsk = "40px";
+        }
         $(".skills" + i + "-img").animate({
           "top": "200%",
           "left": "-3%",
-          "height": "50px",
-          "width" : "50px"
+          "height": heightsk,
+          "width" : widthsk
         },1000);
 
         i++;
@@ -76,7 +83,7 @@ $(document).ready(function(){
     function startwm() {
       $('body').css("overflow", "auto");
       $('html , body').animate({
-        scrollTop: $(".skills-div").offset().top
+        scrollTop: $(".wandermunch").offset().top
       },1000)
       $('body').css("overflow", "hidden");
       var spanWidth = $('.wm span').width();
@@ -222,7 +229,7 @@ $(document).ready(function(){
       });
       $('.slide-up').unbind().click(function(){
         $('html,body').animate({
-          scrollTop: $('.skills-div').offset().top
+          scrollTop: $('.wandermunch').offset().top
         },1000)
       });
     }

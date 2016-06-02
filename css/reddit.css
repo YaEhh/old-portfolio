@@ -1,0 +1,153 @@
+.reddit-div {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/reddit.png");
+  background-size: 100%;
+  position: absolute;
+  top: 200%;
+  overflow: hidden;
+  color: whitesmoke; }
+  .reddit-div .redd {
+    font-family: beyno;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 0px #2F4E6F;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    margin: 3%;
+    padding: 0px;
+    height: 50px;
+    width: 300px; }
+    .reddit-div .redd .imu {
+      color: #0099CC;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: -100%; }
+    .reddit-div .redd .clone {
+      color: white;
+      display: inline-block;
+      position: absolute;
+      left: 300%;
+      top: -200%;
+      text-shadow: 1px 1px 1px #E15119; }
+  .reddit-div .redd-desc {
+    font-family: stellar;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 1px;
+    display: none; }
+    .reddit-div .redd-desc .redd-intro {
+      display: block;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #E15119; }
+    .reddit-div .redd-desc .redd-built {
+      text-align: center; }
+      .reddit-div .redd-desc .redd-built .redd-built-with {
+        color: #0099CC;
+        text-shadow: 1px 1px 1px black;
+        font-size: 120%; }
+    .reddit-div .redd-desc .slider-container {
+      height: 40px;
+      width: 700px;
+      margin-top: 50px; }
+      .reddit-div .redd-desc .slider-container .show-slider {
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        vertical-align: middle; }
+        .reddit-div .redd-desc .slider-container .show-slider:hover {
+          border: none; }
+        .reddit-div .redd-desc .slider-container .show-slider span {
+          display: block;
+          color: white;
+          padding: 10px; }
+  .reddit-div .redd-logo {
+    height: 35%;
+    width: auto;
+    position: absolute;
+    top: 120%;
+    left: 110%;
+    -webkit-transform: rotate(-45deg); }
+  .reddit-div .rd-slider {
+    max-width: 400%;
+    text-align: center;
+    margin-top: 1%;
+    position: relative;
+    top: 1200px;
+    left: 230px;
+    height: 250px;
+    width: 500px; }
+    .reddit-div .rd-slider div {
+      background-color: black;
+      width: 99%;
+      height: 99%;
+      display: none;
+      position: relative; }
+    .reddit-div .rd-slider img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 10px 10px;
+      box-shadow: 0 0 1px white; }
+    .reddit-div .rd-slider button {
+      position: absolute;
+      margin: 260px 10px;
+      color: white;
+      background-color: #0099CC;
+      border-radius: 5px 5px 5px;
+      border: none;
+      padding: 5px;
+      width: 70px; }
+    .reddit-div .rd-slider button:hover {
+      color: whitesmoke;
+      background-color: #0F3B5F; }
+    .reddit-div .rd-slider .next1 {
+      right: 5px;
+      z-index: 1; }
+    .reddit-div .rd-slider .prev1 {
+      left: 5px;
+      z-index: 1; }
+  .reddit-div .go-to1 {
+    font-family: 'stellar';
+    position: relative;
+    left: 950px;
+    top: 55px;
+    background-color: transparent;
+    border-bottom: 2px groove  #0099CC;
+    border-radius: 1px 1px 1px;
+    font-size: 100%;
+    font-family: stellar;
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 1s ease;
+    display: none;
+    width: 11%;
+    letter-spacing: 1px; }
+    .reddit-div .go-to1:hover {
+      -webkit-transform: scale(1.05);
+      border-bottom: 2px groove  #E15119; }
+  .reddit-div .slide-up-div {
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    margin-right: 5%;
+    font-size: 200%; }
+    .reddit-div .slide-up-div .slide-up {
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+      height: 100%;
+      width: 100%;
+      color: white; }
+      .reddit-div .slide-up-div .slide-up:hover {
+        color: #0099CC; }
+
+/*# sourceMappingURL=reddit.css.map */

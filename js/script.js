@@ -46,10 +46,17 @@ $(document).ready(function(){
 
         $(".my-img").append($(" <img class= " + skills[i].cl + " src= " + skills[i].sr + " height='0px'  /> "))
         $('.skills').text(" " + skills[i].name + " ");
+        if (window.width < 1200) {
+          topsk = "10%";
+        }else{
+          topsk = "25%";
+        }
+        console.log(topsk);
         $('.skills').animate({
-          top: "25%",
+          top: topsk,
         },1000);
-        console.log(window.innerWidth);
+
+        // console.log(window.innerWidth);
         if (window.innerWidth > "400") {
           heightsk = "50px";
           widthsk = "50px";

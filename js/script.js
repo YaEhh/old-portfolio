@@ -49,23 +49,25 @@ $(document).ready(function(){
         if (window.width < 1200) {
           topsk = "10%";
         }else{
-          topsk = "25%";
+          topsk = "15%";
         }
         console.log(topsk);
         $('.skills').animate({
           top: topsk,
         },1000);
 
-        // console.log(window.innerWidth);
+        console.log(window.innerWidth);
         if (window.innerWidth > "400") {
           heightsk = "50px";
           widthsk = "50px";
+          topskk= "200%";
         } else {
+          topskk = "100%";
           heightsk = "40px";
           widthsk = "40px";
         }
         $(".skills" + i + "-img").animate({
-          "top": "200%",
+          "top": topskk,
           "left": "-3%",
           "height": heightsk,
           "width" : widthsk

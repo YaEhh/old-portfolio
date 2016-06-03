@@ -39,6 +39,9 @@ $(document).ready(function(){
     var i = 0;
     $(".enter-btn").delay(3000).fadeIn(1000);
     $('.skills').css("visibility", "visible");
+    document.addEventListener('touchmove', function(evt) {
+    evt.preventDefault();
+});
 
     function myLoop() {
 

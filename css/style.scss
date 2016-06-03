@@ -37,8 +37,9 @@ body {
 
     .intro-div {
         width: 100%;
-        // overflow:hidden;
-        // overflow-x: hidden;
+        z-index: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
         // height: auto;
         min-height:700px;
         overflow:hidden;

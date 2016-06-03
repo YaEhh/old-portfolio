@@ -46,23 +46,23 @@ $(document).ready(function(){
 
         $(".my-img").append($(" <img class= " + skills[i].cl + " src= " + skills[i].sr + " height='0px'  /> "))
         $('.skills').text(" " + skills[i].name + " ");
-        if (window.width < 1200) {
-          topsk = "10%";
+        if (window.innerWidth < 1200) {
+          topsk = "5%";
         }else{
           topsk = "15%";
         }
-        console.log(topsk);
+        // console.log(window.innerWidth);
         $('.skills').animate({
           top: topsk,
         },1000);
 
-        console.log(window.innerWidth);
+        // console.log(window.innerWidth);
         if (window.innerWidth > "400") {
           heightsk = "50px";
           widthsk = "50px";
           topskk= "200%";
         } else {
-          topskk = "100%";
+          topskk = "30%";
           heightsk = "40px";
           widthsk = "40px";
         }

@@ -28,7 +28,6 @@ body {
     z-index: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    min-height: 700px;
     overflow: hidden;
     font-family: 'lombok';
     color: #EBCEAC;

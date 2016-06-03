@@ -6,14 +6,15 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 100%; }
+    top: 100%;
+    overflow: hidden; }
     .wandermunch .wm {
       font-size: 300%;
       text-align: center;
       font-family: 'blackjack';
       text-shadow: 2px 2px 2px darkgreen;
       width: 0;
-      height: 2em;
+      height: 1.25em;
       white-space: nowrap;
       overflow: hidden;
       position: relative;
@@ -22,7 +23,7 @@
       margin: auto; }
     .wandermunch .description {
       padding-top: 20px;
-      height: 20%;
+      height: 15%;
       width: 100%;
       color: #585858;
       font-family: stellar;
@@ -33,7 +34,8 @@
       .wandermunch .description p {
         margin: 2%; }
       .wandermunch .description .built-with {
-        color: orange; }
+        color: orange;
+        margin-top: -1em; }
       .wandermunch .description .wm-des {
         border-bottom: 4px solid darkgrey;
         padding-bottom: 3%;
@@ -88,20 +90,20 @@
     .wandermunch .go-to {
       position: relative;
       top: -10%;
+      margin-top: 60px;
       margin-left: 30%;
       background-color: transparent;
       border-top: 4px solid orange;
       border-bottom: 4px solid orange;
       border-radius: 1px 1px 1px;
-      font-size: 130%;
+      font-size: 100%;
       font-family: stellar;
-      padding: 10px;
+      padding: 2px;
       color: #585858;
       text-decoration: none;
       display: inline-block;
-      width: 12%;
       margin-bottom: 20px;
-      min-width: 180px; }
+      min-width: 30px; }
     .wandermunch .go-to:hover {
       border-top: 4px solid darkorange;
       border-bottom: 4px solid darkorange;
@@ -116,12 +118,13 @@
       height: 5%;
       text-align: center;
       font-family: stellar;
-      font-size: 300%; }
+      font-size: 200%; }
       .wandermunch .slide-up-div .slide-up-intro {
         display: block;
         width: 100%;
         height: 100%;
-        color: green; }
+        color: green;
+        margin: 0px; }
         .wandermunch .slide-up-div .slide-up-intro:hover {
           color: green; }
     .wandermunch .slide-down-div {

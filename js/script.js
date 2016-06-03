@@ -64,7 +64,7 @@ $(document).ready(function(){
         if (window.matchMedia( "(max-width: 600px)").matches) {
           heightsk = "40px";
           widthsk = "40px";
-          topskk= "200%";
+          topskk= "100%";
         } else if (window.matchMedia( "(max-width: 1500px)").matches) {
           topskk = "150%";
           heightsk = "50px";

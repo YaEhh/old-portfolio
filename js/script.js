@@ -51,8 +51,10 @@ $(document).ready(function(){
         $('.skills').text(" " + skills[i].name + " ");
         if (window.innerWidth < 1200) {
           topsk = "5%";
-        }else{
-          topsk = "15%";
+        }else if ( 300 < window.innerWidth < 1200){
+          topsk = "25%";
+        } else {
+          topsk = "25%"
         }
         // console.log(window.innerWidth);
         $('.skills').animate({

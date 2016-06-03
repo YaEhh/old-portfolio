@@ -61,15 +61,15 @@ $(document).ready(function(){
         },1000);
 
         // console.log(window.innerWidth);
-        if (window.matchMedia( "(min-width: 300px)" )) {
+        if (mq = window.matchMedia( "(min-width: 300px)" )) {
           heightsk = "40px";
           widthsk = "40px";
           topskk= "200%";
-        } else if (window.matchMedia( "(min-width: 600px)" )) {
+        } else if (mq = window.matchMedia( "(min-width: 600px)" )) {
           topskk = "150%";
           heightsk = "50px";
           widthsk = "50px";
-        } else if (window.matchMedia( "(min-width: 1500px)" )) {
+        } else if (mq = window.matchMedia( "(min-width: 1500px)" )) {
           topskk = "150%";
           heightsk= "100px";
           widthsk = "100px";

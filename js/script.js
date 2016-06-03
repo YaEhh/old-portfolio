@@ -49,14 +49,15 @@ $(document).ready(function(){
 
         $(".my-img").append($(" <img class= " + skills[i].cl + " src= " + skills[i].sr + " height='0px'  /> "))
         $('.skills').text(" " + skills[i].name + " ");
-        if (window.innerWidth < 1200) {
+        if (window.innerWidth < "600") {
           topsk = "5%";
-        }else if ( 300 < window.innerWidth < 1200){
+        }else if ( "600" < window.innerWidth < "1000"){
           topsk = "25%";
         } else {
           topsk = "25%"
         }
-        // console.log(window.innerWidth);
+        console.log(topsk);
+        console.log(window.innerWidth);
         $('.skills').animate({
           top: topsk,
         },1000);

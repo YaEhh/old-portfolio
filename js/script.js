@@ -106,9 +106,14 @@ $(document).ready(function(){
       $('body').css("overflow", "hidden");
       var spanWidth = $('.wm span').width();
       $('.wm').animate( { width: spanWidth}, 1000, 'swing' );
+      if (window.matchMedia('(max-width:600px)'.matches)) {
+        leftwm = "0px";
+      } else {
+        leftwm = "220px";
+      }
       setTimeout(function(){
         $(".description").fadeIn(1000);
-        $(".go-to").css({visibility: "visible"}).animate({left: "220px"},1000);
+        $(".go-to").css({visibility: "visible"}).animate({left: leftwm},1000);
       },1000);
 
       var currentIndex = 0,

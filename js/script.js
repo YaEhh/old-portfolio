@@ -65,10 +65,14 @@ $(document).ready(function(){
           heightsk = "40px";
           widthsk = "40px";
           topskk= "200%";
-        } else {
+        } else if("600" < window.innerWidth < "1500") {
           topskk = "150%";
           heightsk = "50px";
           widthsk = "50px";
+        } else {
+          topskk = "150%";
+          heightsk= "100px";
+          widthsk = "100px";
         }
         console.log(innerWidth);
         $(".skills" + i + "-img").animate({

@@ -65,11 +65,11 @@ $(document).ready(function(){
           heightsk = "40px";
           widthsk = "40px";
           topskk= "200%";
-        } else if (window.matchMedia( "(min-width: 600px)" ) {
+        } else if (window.matchMedia( "(min-width: 600px)" )) {
           topskk = "150%";
           heightsk = "50px";
           widthsk = "50px";
-        } else if (window.matchMedia( "(min-width: 1500px)" ) {
+        } else if (window.matchMedia( "(min-width: 1500px)" )) {
           topskk = "150%";
           heightsk= "100px";
           widthsk = "100px";

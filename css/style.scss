@@ -29,6 +29,7 @@
 body {
     margin: 0;
     padding: 0;
+    // position:fixed;
     // overflow-y:hidden;
 }
 
@@ -38,7 +39,8 @@ body {
         width: 100%;
         // overflow:hidden;
         // overflow-x: hidden;
-        height: auto;
+        // height: auto;
+        min-height:700px;
         overflow:hidden;
         font-family: 'lombok';
         color: #EBCEAC;
@@ -49,7 +51,7 @@ body {
         background-size: 100% auto;
         background-repeat:no-repeat;
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         // position:absolute;

@@ -69,7 +69,7 @@ $(document).ready(function(){
           topskk = "150%";
           heightsk = "50px";
           widthsk = "50px";
-        } else {
+        } else if ("1500" < window.innerWidth <= "3200") {
           topskk = "150%";
           heightsk= "100px";
           widthsk = "100px";

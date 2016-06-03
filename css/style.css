@@ -134,7 +134,8 @@ body {
       padding: 0px;
       margin: 0px;
       display: block;
-      margin: auto; }
+      margin: auto;
+      font-size: 50%; }
     .intro-div .skills0-img,
     .intro-div .skills1-img,
     .intro-div .skills2-img,
@@ -149,7 +150,7 @@ body {
       padding: 1px;
       margin: 1%; }
     .intro-div .enter-btn {
-      font-size: 50%;
+      font-size: 60%;
       color: white;
       text-decoration: none;
       padding: 10px;

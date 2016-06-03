@@ -51,27 +51,26 @@ $(document).ready(function(){
         $('.skills').text(" " + skills[i].name + " ");
         if (window.innerWidth < "600") {
           topsk = "5%";
-        }else if ( "600" < window.innerWidth < "1000"){
-          topsk = "25%";
-        } else {
-          topsk = "25%"
+        }else{
+          topsk = "10%";
         }
-        console.log(topsk);
-        console.log(window.innerWidth);
+        // console.log(topsk);
+        // console.log(window.innerWidth);
         $('.skills').animate({
           top: topsk,
         },1000);
 
         // console.log(window.innerWidth);
-        if (window.innerWidth > "400") {
-          heightsk = "50px";
-          widthsk = "50px";
-          topskk= "200%";
-        } else {
-          topskk = "30%";
+        if (window.innerWidth < "600") {
           heightsk = "40px";
           widthsk = "40px";
+          topskk= "200%";
+        } else {
+          topskk = "150%";
+          heightsk = "50px";
+          widthsk = "50px";
         }
+        console.log(innerWidth);
         $(".skills" + i + "-img").animate({
           "top": topskk,
           "left": "-3%",

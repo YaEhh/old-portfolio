@@ -61,11 +61,11 @@ $(document).ready(function(){
         },1000);
 
         // console.log(window.innerWidth);
-        if (window.innerWidth < "600") {
+        if (window.innerWidth <= "600") {
           heightsk = "40px";
           widthsk = "40px";
           topskk= "200%";
-        } else if("600" < window.innerWidth < "1500") {
+        } else if ("600" < window.innerWidth <= "1500") {
           topskk = "150%";
           heightsk = "50px";
           widthsk = "50px";

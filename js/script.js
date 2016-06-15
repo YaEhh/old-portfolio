@@ -207,7 +207,7 @@ $(document).ready(function() {
         $(".slide-up-intro").unbind().click(function() {
             clearInterval(autoSlide);
             scrollTo($(".intro-div"))
-            $('.skills').show();
+            // $('.skills').show();
         });
 
         $('.slide-up').unbind().click(function() {

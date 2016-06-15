@@ -3,6 +3,8 @@ $(document).ready(function() {
     bod = $('html body');
     enterbtn = $('.enter-btn');
     skill = $('.skills');
+    imu = $('.imu')
+    clone = $('.clone')
     anim = true;
     rotateIndex = 0;
 
@@ -15,6 +17,7 @@ $(document).ready(function() {
         topSkillsImg = "160%";
         heightSkillsImg = "40px";
         widthSkillsImg = "40px";
+        scrollSpeed = 100;
     }
 
     var skills = [{
@@ -59,15 +62,15 @@ $(document).ready(function() {
         bod.css("overflow", "auto");
         bod.animate({
             scrollTop: destination.offset().top
-        },1000)
+        },scrollSpeed)
         bod.css("overflow","hidden");
     }
+    scrollTo();
 
     function start() {
 
-        scrollTo();
-
         $(".enter-btn").unbind().click(function() {
+            scrollTo($(".wandermunch"))
             startwm();
         });
 
@@ -92,7 +95,6 @@ $(document).ready(function() {
         function skillsLoop() {
 
             setTimeout(function() {
-
                 /// Inserting skills img intro my-img div. Flashing Text with animation.
                 $(".my-img").append($(" <img class= " + skills[i].cl + " src= " + skills[i].sr + " height='0px'  /> "))
                 skill.text(" " + skills[i].name + " ");
@@ -195,29 +197,22 @@ $(document).ready(function() {
         });
 
         $('.slide-down').unbind().click(function() {
+                scrollTo($(".reddit-div"))
                 clearInterval(autoSlide);
                 startredd();
-                $('html, body').animate({
-                    scrollTop: $('.reddit-div').offset().top
-                });
+
 
         });
 
         $(".slide-up-intro").unbind().click(function() {
             clearInterval(autoSlide);
-            for (i = 0; i <= 8; i++) {
-                $('.skills' + i + '-img').remove();
-            }
-            start();
+            scrollTo($(".intro-div"))
             $('.skills').show();
         });
 
         $('.slide-up').unbind().click(function() {
             clearInterval(autoSlide);
-            $('html,body').animate({
-                scrollTop: $('.wandermunch').offset().top
-            }, 1000)
-            startwm();
+            scrollTo($(".wandermunch"));
         });
 
 
@@ -225,14 +220,19 @@ $(document).ready(function() {
     }
 
     function startwm() {
-        //Scroll to WanderMunch
-        scrollTo($(".wandermunch"));
 
         //Setting witdth of the title - Animation
-        var spanWidth = $('.wm span').width();
-        $('.wm').animate({
-            width: spanWidth
-        }, 4000, 'swing');
+        function wanderAnim() {
+            var spanWidth = $('.wm span').width();
+            $('.wm').animate({
+                width: spanWidth
+            }, 4000, 'swing');
+        }
+
+        if (anim == true) {
+            wanderAnim();
+        }
+
 
         // Making sure no other pages show when you resize window.
         // Definitely shouldn't be here
@@ -277,39 +277,24 @@ $(document).ready(function() {
 
     function startredd() {
 
-
         sliderLoop("reddit");
-        //Disabling scroll yet again
-        $('body').css("overflow", "auto");
-        $('html , body').animate({
-            scrollTop: $(".reddit-div").offset().top
-        }, 1000);
-        $('body').css("overflow", "hidden");
 
-        //Animation for logo popping up
-        $('.redd-logo').delay(800).animate({
-            top: "600px",
-            left: "1250px"
-        }, 2000)
-
-        //Description, Tile and go-to button animation and
-        $('.go-to1').delay(800).fadeIn("slow", "swing")
-        $('.redd-desc').delay(800).fadeIn("slow", "swing")
-        imu = $('.imu')
-        clone = $('.clone')
-
-        imu.animate({
-            left: "27%"
-        }, 1000).rotate({
-            endDeg: 360,
-            persist: true,
-            duration: 1
-        }).animate({
-            fontSize: "200%"
-        })
-
-
-        if (rotateIndex == 0) {
+        function redditAnim() {
+            $('.redd-logo').delay(800).animate({
+                top: "600px",
+                left: "1250px"
+            }, 2000)
+            $('.go-to1').delay(800).fadeIn("slow", "swing")
+            $('.redd-desc').delay(800).fadeIn("slow", "swing")
+            imu.animate({
+                left: "27%"
+            }, 1000).rotate({
+                endDeg: 360,
+                persist: true,
+                duration: 1
+            }).animate({
+                fontSize: "200%"
+            })
             clone.rotate({
                     endDeg: 90,
                     persist: false,
@@ -324,9 +309,20 @@ $(document).ready(function() {
                     left: 175,
                     fontSize: "200%"
                 }, 600)
-            rotateIndex++;
-            console.log(rotateIndex)
-        };
+        }
+
+
+
+        //Description, Tile and go-to button animation and
+
+
+
+
+
+
+
+
+
 
 
         // Reddit image slider - again. Need to put into a function

@@ -3,12 +3,20 @@
     background-image: url("../../../images/redditmobile.png"); }
     body .reddit-div .redd {
       font-size: 125%; }
+      body .reddit-div .redd .imu {
+        left: 30%;
+        font-size: 200%; }
+      body .reddit-div .redd .clone {
+        top: 0px;
+        left: 175px;
+        font-size: 200%; }
     body .reddit-div .redd-desc {
       font-size: 80%;
       width: 90%;
       height: auto;
       left: 5%;
-      top: 130px; }
+      top: 130px;
+      display: block; }
     body .reddit-div .slider-container {
       display: none; }
     body .reddit-div .rd-slider {

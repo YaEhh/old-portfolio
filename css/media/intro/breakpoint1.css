@@ -1,11 +1,13 @@
 @media screen and (max-width: 500px) {
-  body .intro-div .skills {
-    font-size: 50%;
-    top: 5%; }
-  body .intro-div .my-img {
-    width: 60%;
-    margin: auto; }
-  body .intro-div .enter-btn {
-    font-size: 70%; } }
+  body .intro-div {
+    background-image: url("../../../images/bg1mobile.png"); }
+    body .intro-div .skills {
+      font-size: 50%;
+      top: 5%; }
+    body .intro-div .my-img {
+      width: 60%;
+      margin: auto; }
+    body .intro-div .enter-btn {
+      font-size: 70%; } }
 
 /*# sourceMappingURL=breakpoint1.css.map */

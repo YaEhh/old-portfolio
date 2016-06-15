@@ -10,13 +10,15 @@
                 width:90%;
             }
             .description {
-                padding-top: 10px;
+                padding-top: 3px;
                 height: 15%;
-                width: 100%;
+                width: 80%;
+                margin:auto;
                 position: relative;
                 font-size: 80%;
                 padding-left: 0;
                 display: block;
+                // text-shadow: 1px 1px 1px black;
                 .built-with {
                     margin-top: -1em;
                 }
@@ -31,7 +33,7 @@
                 top: 0;
             }
             .go-to-div {
-                margin-top: 30px;
+                margin-top: 40px;
             }
             .go-to {
                 margin: auto;

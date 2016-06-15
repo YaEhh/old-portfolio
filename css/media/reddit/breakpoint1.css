@@ -1,0 +1,35 @@
+@media screen and (max-width: 500px) {
+  body .reddit-div {
+    background-image: url("../../../images/redditmobile.png"); }
+    body .reddit-div .redd {
+      font-size: 125%; }
+    body .reddit-div .redd-desc {
+      font-size: 80%;
+      width: 90%;
+      height: auto;
+      left: 5%;
+      top: 130px; }
+    body .reddit-div .slider-container {
+      display: none; }
+    body .reddit-div .rd-slider {
+      width: 90%;
+      position: relative;
+      top: 320px;
+      left: 0;
+      margin: auto;
+      height: 200px; }
+      body .reddit-div .rd-slider button {
+        margin: 205px 10px;
+        padding: 2px 2px; }
+    body .reddit-div .slide-up-div {
+      width: 100%;
+      left: 0%;
+      padding-top: 20px; }
+    body .reddit-div .go-to1 {
+      left: 0px;
+      display: block;
+      margin: auto;
+      min-width: 130px;
+      font-size: 80%; } }
+
+/*# sourceMappingURL=breakpoint1.css.map */

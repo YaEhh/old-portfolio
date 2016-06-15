@@ -1,0 +1,33 @@
+
+@media screen and (max-width:500px) {
+
+  body {
+
+    .intro-div {
+
+          .skills {
+              font-size: 50%;
+              top:5%;
+
+          }
+          .my-img{
+            width:60%;
+            margin:auto;
+          }
+          .skills0-img,
+          .skills1-img,
+          .skills2-img,
+          .skills3-img,
+          .skills4-img,
+          .skills5-img,
+          .skills6-img,
+          .skills7-img,
+          .skills8-img {
+              // margin:10px;
+          }
+          .enter-btn {
+              font-size: 70%;
+          }
+    }
+  }
+}

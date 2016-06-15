@@ -1,0 +1,89 @@
+.intro-div {
+      width: 100%;
+      height: auto;
+      font-family: 'lombok';
+      color: #EBCEAC;
+      font-size: 300%;
+      text-align: center;
+      text-shadow: 2px 2px 2px black;
+      background-image: url('../images/bg1.jpg');
+      background-size: 100% 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // position:absolute;
+      .name-first {
+          display: none;
+          height: 5%;
+      }
+      .name-last {
+          display: none;
+          margin: 0;
+          height: 5%;
+      }
+      .my-img {
+          z-index: 1;
+          position: relative;
+          top: 30%;
+          left: 0;
+          // background-color:black;
+          height: 10%;
+          width: 100%;
+          margin:3%;
+          // overflow:none;
+      }
+      .skills {
+          position: relative;
+          top: 30%;
+          left:0px;
+          font-size: 40%;
+          color: #78C7C7;
+          visibility: hidden;
+          z-index: 1;
+          padding:0px;
+          margin:0px;
+          display:block;
+          margin:auto;
+          font-size:50%;
+      }
+      .skills0-img,
+      .skills1-img,
+      .skills2-img,
+      .skills3-img,
+      .skills4-img,
+      .skills5-img,
+      .skills6-img,
+      .skills7-img,
+      .skills8-img {
+          z-index: 1;
+          // display:flex;
+          position: relative;
+          // top:0px;
+          // left:0px;
+          // box-shadow: 1px 0px 5px  white;
+          padding: 1px;
+          margin: 1%;
+      }
+      .enter-btn {
+          font-size: 60%;
+          color: white;
+          // font-family:cursive;
+          text-decoration: none;
+          // display: none;
+          padding: 10px;
+          // border: 1px solid grey;
+          border-radius: 10px 10px 10px;
+          // position: absolute;
+          // top: 40%;
+          // left: 46%;
+          text-shadow: 10px 10px 10px black;
+      }
+      .enter-btn:hover {
+          border: none;
+          // font-size: 45%;
+          transition: all 0.5s ease;
+          text-shadow: 5px 5px 10px black;
+          color: #EBCEAC;
+      }
+  }

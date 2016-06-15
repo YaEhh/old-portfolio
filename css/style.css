@@ -1,5 +1,6 @@
-@import url(wandermunch.css);
-@import url(reddit.css);
+@import url(media/intro/breakpoint1.css);
+@import url(media/wandermunch/breakpoint1.css);
+@import url(media/reddit/breakpoint1.css);
 @font-face {
   font-family: 'Beyno';
   src: url("../fonts/BEYNO.otf"); }
@@ -22,211 +23,371 @@ body {
   margin: 0;
   padding: 0; }
 
-@media (max-width: 600px) {
-  .intro-div {
+.intro-div {
+  width: 100%;
+  height: auto;
+  font-family: 'lombok';
+  color: #EBCEAC;
+  font-size: 300%;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  background-image: url("../images/bg1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .intro-div .name-first {
+    height: 5%; }
+  .intro-div .name-last {
+    margin: 0;
+    height: 5%; }
+  .intro-div .my-img {
+    z-index: 1;
+    position: relative;
+    top: 30%;
+    left: 0;
+    height: 10%;
     width: 100%;
-    z-index: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    margin: 3%; }
+  .intro-div .skills {
+    position: relative;
+    top: 30%;
+    left: 0px;
+    font-size: 40%;
+    color: #78C7C7;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    margin: auto; }
+  .intro-div .skills0-img,
+  .intro-div .skills1-img,
+  .intro-div .skills2-img,
+  .intro-div .skills3-img,
+  .intro-div .skills4-img,
+  .intro-div .skills5-img,
+  .intro-div .skills6-img,
+  .intro-div .skills7-img,
+  .intro-div .skills8-img {
+    z-index: 1;
+    position: relative;
+    padding: 1px;
+    margin: 1%; }
+  .intro-div .enter-btn {
+    font-size: 40%;
+    color: white;
+    padding: 0px;
+    text-decoration: none;
+    display: none;
+    padding: 10px;
+    border-radius: 10px 10px 10px;
+    top: 40%;
+    left: 46%;
+    text-shadow: 10px 10px 10px black;
+    display: block;
+    margin: auto; }
+  .intro-div .enter-btn:hover {
+    border: none;
+    transition: all 0.5s ease;
+    text-shadow: 5px 5px 10px black;
+    color: #EBCEAC; }
+
+.wandermunch {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/bg23.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100%;
+  overflow: hidden; }
+  .wandermunch .wm {
+    font-size: 500%;
+    text-align: center;
+    font-family: 'blackjack';
+    text-shadow: 2px 2px 2px darkgreen;
+    width: 0;
+    height: 2em;
+    white-space: nowrap;
     overflow: hidden;
-    font-family: 'lombok';
-    color: #EBCEAC;
-    font-size: 250%;
+    position: relative;
+    left: 40%;
+    top: 1%;
+    color: black; }
+  .wandermunch .description {
+    height: 20%;
+    width: 40%;
+    color: #585858;
+    font-family: stellar;
+    padding-left: 3%;
+    padding-bottom: 0;
+    letter-spacing: 1px;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
-    background-image: url("../images/bg1mobile2.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .intro-div .name-first {
-      display: none;
-      height: 5%; }
-    .intro-div .name-last {
-      display: none;
-      margin: 0;
-      height: 5%; }
-    .intro-div .my-img {
-      z-index: 1;
-      position: relative;
-      top: 30%;
-      left: 0;
-      height: 10%;
-      width: 100%;
-      margin: 3%;
-      width: auto; }
-    .intro-div .skills {
-      position: relative;
-      font-size: 40%;
-      color: #78C7C7;
-      visibility: hidden;
-      z-index: 1;
-      padding: 0px;
-      margin: 0px;
-      display: block;
-      margin: auto; }
-    .intro-div .skills0-img,
-    .intro-div .skills1-img,
-    .intro-div .skills2-img,
-    .intro-div .skills3-img,
-    .intro-div .skills4-img,
-    .intro-div .skills5-img,
-    .intro-div .skills6-img,
-    .intro-div .skills7-img,
-    .intro-div .skills8-img {
-      z-index: 1;
-      position: relative;
-      padding: 1px;
-      margin: 1%; }
-    .intro-div .enter-btn {
-      font-size: 60%;
-      color: white;
-      text-decoration: none;
-      padding: 0px;
-      border-radius: 10px 10px 10px;
-      text-shadow: 10px 10px 10px black; }
-    .intro-div .enter-btn:hover {
-      border: none;
-      transition: all 0.5s ease;
-      text-shadow: 5px 5px 10px black;
-      color: #EBCEAC; } }
-@media (max-width: 1500px) {
-  .intro-div {
+    display: none; }
+    .wandermunch .description p {
+      margin: 2%; }
+    .wandermunch .description .built-with {
+      color: orange; }
+    .wandermunch .description .wm-des {
+      border-bottom: 4px solid darkgrey;
+      padding-bottom: 3%;
+      margin-top: 5%;
+      line-height: 20px;
+      margin-top: 0; }
+    .wandermunch .description .wm-intro {
+      color: orange;
+      font-size: 125%;
+      text-shadow: 1px 1px 0 black;
+      margin: 2%; }
+  .wandermunch .container {
+    height: 32%;
+    width: 35%;
+    margin-left: 5%;
+    max-width: 400%;
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+    left: -50%; }
+  .wandermunch .container div {
+    width: 99%;
+    height: 99%;
+    display: inline-block;
+    display: none; }
+  .wandermunch .container img {
     width: 100%;
-    height: auto;
-    font-family: 'lombok';
-    color: #EBCEAC;
-    font-size: 300%;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
-    background-image: url("../images/bg1.jpg");
-    background-size: 100% 100%;
     height: 100%;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0 0 10px white; }
+  .wandermunch button {
     position: absolute;
-    top: 0;
-    left: 0; }
-    .intro-div .name-first {
-      display: none;
-      height: 5%; }
-    .intro-div .name-last {
-      display: none;
-      margin: 0;
-      height: 5%; }
-    .intro-div .my-img {
-      z-index: 1;
-      position: relative;
-      top: 30%;
-      left: 0;
-      height: 10%;
-      width: 100%;
-      margin: 3%; }
-    .intro-div .skills {
-      position: relative;
-      top: 30%;
-      left: 0px;
-      font-size: 40%;
-      color: #78C7C7;
-      visibility: hidden;
-      z-index: 1;
-      padding: 0px;
-      margin: 0px;
-      display: block;
-      margin: auto;
-      font-size: 50%; }
-    .intro-div .skills0-img,
-    .intro-div .skills1-img,
-    .intro-div .skills2-img,
-    .intro-div .skills3-img,
-    .intro-div .skills4-img,
-    .intro-div .skills5-img,
-    .intro-div .skills6-img,
-    .intro-div .skills7-img,
-    .intro-div .skills8-img {
-      z-index: 1;
-      position: relative;
-      padding: 1px;
-      margin: 1%; }
-    .intro-div .enter-btn {
-      font-size: 60%;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 10px 10px 10px;
-      text-shadow: 10px 10px 10px black; }
-    .intro-div .enter-btn:hover {
-      border: none;
-      transition: all 0.5s ease;
-      text-shadow: 5px 5px 10px black;
-      color: #EBCEAC; } }
-@media (min-width: 1501px) {
-  .intro-div {
-    width: 100%;
-    height: auto;
-    font-family: 'lombok';
-    color: #EBCEAC;
-    font-size: 400%;
+    margin: 220px 10px;
+    color: white;
+    background-color: #2da668;
+    border-radius: 10px 10px 10px;
+    border: none;
+    visibility: hidden;
+    padding: 5px;
+    width: 60px;
+    outline: none; }
+  .wandermunch button:hover {
+    padding: 5px;
+    color: whitesmoke;
+    background-color: #127844; }
+  .wandermunch .next {
+    right: 5px;
+    z-index: 1; }
+  .wandermunch .prev {
+    left: 5px;
+    z-index: 1; }
+  .wandermunch .go-to {
+    position: relative;
+    top: -10%;
+    visibility: hidden;
+    background-color: transparent;
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    border-radius: 1px 1px 1px;
+    font-size: 130%;
+    font-family: stellar;
+    padding: 10px;
+    color: #585858;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    display: inline-block;
+    width: 12%;
+    margin-bottom: 5px;
+    min-width: 180px; }
+  .wandermunch .go-to:hover {
+    border-top: 4px solid darkorange;
+    border-bottom: 4px solid darkorange;
+    color: black;
+    -webkit-transform: scale(1.05); }
+  .wandermunch .slide-up-div {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 35%;
+    height: 5%;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
-    background-image: url("../images/bg1.jpg");
-    background-size: 100% 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .intro-div .name-first {
-      display: none;
-      height: 5%; }
-    .intro-div .name-last {
-      display: none;
-      margin: 0;
-      height: 5%; }
-    .intro-div .my-img {
-      z-index: 1;
-      position: relative;
-      top: 30%;
-      left: 0;
-      height: 10%;
-      width: 100%;
-      margin: 3%; }
-    .intro-div .skills {
-      position: relative;
-      top: 30%;
-      left: 0px;
-      font-size: 40%;
-      color: #78C7C7;
-      visibility: hidden;
-      z-index: 1;
-      padding: 0px;
-      margin: 0px;
+    font-family: stellar;
+    font-size: 200%; }
+    .wandermunch .slide-up-div .slide-up-intro {
       display: block;
-      margin: auto;
-      font-size: 50%; }
-    .intro-div .skills0-img,
-    .intro-div .skills1-img,
-    .intro-div .skills2-img,
-    .intro-div .skills3-img,
-    .intro-div .skills4-img,
-    .intro-div .skills5-img,
-    .intro-div .skills6-img,
-    .intro-div .skills7-img,
-    .intro-div .skills8-img {
-      z-index: 1;
-      position: relative;
-      padding: 1px;
-      margin: 1%; }
-    .intro-div .enter-btn {
-      font-size: 60%;
+      width: 100%;
+      height: 100%;
+      color: #585858; }
+      .wandermunch .slide-up-div .slide-up-intro:hover {
+        color: green; }
+  .wandermunch .slide-down-div {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    width: 35%;
+    height: 5%;
+    font-family: stellar;
+    font-size: 200%;
+    text-align: center; }
+    .wandermunch .slide-down-div .slide-down {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #585858; }
+      .wandermunch .slide-down-div .slide-down:hover {
+        color: green; }
+
+.reddit-div {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/reddit.png");
+  background-size: 100%;
+  position: absolute;
+  top: 200%;
+  overflow: hidden;
+  color: whitesmoke; }
+  .reddit-div .redd {
+    font-family: beyno;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 0px #2F4E6F;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    margin: 3%;
+    padding: 0px;
+    height: 50px;
+    width: 300px; }
+    .reddit-div .redd .imu {
+      color: #0099CC;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: -100%; }
+    .reddit-div .redd .clone {
       color: white;
-      text-decoration: none;
-      padding: 10px;
+      display: inline-block;
+      position: absolute;
+      left: 300%;
+      top: -200%;
+      text-shadow: 1px 1px 1px #E15119; }
+  .reddit-div .redd-desc {
+    font-family: stellar;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 1px;
+    display: none; }
+    .reddit-div .redd-desc .redd-intro {
+      display: block;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #E15119; }
+    .reddit-div .redd-desc .redd-built {
+      text-align: center; }
+      .reddit-div .redd-desc .redd-built .redd-built-with {
+        color: #0099CC;
+        text-shadow: 1px 1px 1px black;
+        font-size: 120%; }
+    .reddit-div .redd-desc .slider-container {
+      height: 40px;
+      width: 700px;
+      margin-top: 50px; }
+      .reddit-div .redd-desc .slider-container .show-slider {
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        vertical-align: middle; }
+        .reddit-div .redd-desc .slider-container .show-slider:hover {
+          border: none; }
+        .reddit-div .redd-desc .slider-container .show-slider span {
+          display: block;
+          color: white;
+          padding: 10px; }
+  .reddit-div .redd-logo {
+    height: 35%;
+    width: auto;
+    position: absolute;
+    top: 120%;
+    left: 110%;
+    -webkit-transform: rotate(-45deg); }
+  .reddit-div .rd-slider {
+    max-width: 400%;
+    text-align: center;
+    margin-top: 1%;
+    position: relative;
+    top: 1200px;
+    left: 230px;
+    height: 250px;
+    width: 500px; }
+    .reddit-div .rd-slider div {
+      background-color: black;
+      width: 99%;
+      height: 99%;
+      display: none;
+      position: relative; }
+    .reddit-div .rd-slider img {
+      width: 100%;
+      height: 100%;
       border-radius: 10px 10px 10px;
-      text-shadow: 10px 10px 10px black; }
-    .intro-div .enter-btn:hover {
+      box-shadow: 0 0 1px white; }
+    .reddit-div .rd-slider button {
+      position: absolute;
+      margin: 260px 10px;
+      color: white;
+      background-color: #0099CC;
+      border-radius: 5px 5px 5px;
       border: none;
-      transition: all 0.5s ease;
-      text-shadow: 5px 5px 10px black;
-      color: #EBCEAC; } }
+      padding: 5px;
+      width: 70px;
+      outline: none; }
+    .reddit-div .rd-slider button:hover {
+      color: whitesmoke;
+      background-color: #E15119; }
+    .reddit-div .rd-slider .next1 {
+      right: 5px;
+      z-index: 1; }
+    .reddit-div .rd-slider .prev1 {
+      left: 5px;
+      z-index: 1; }
+  .reddit-div .go-to1 {
+    font-family: 'stellar';
+    position: relative;
+    left: 950px;
+    top: 55px;
+    background-color: transparent;
+    border-bottom: 2px groove  #0099CC;
+    border-radius: 1px 1px 1px;
+    font-size: 100%;
+    font-family: stellar;
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 1s ease;
+    display: none;
+    width: 11%;
+    letter-spacing: 1px; }
+    .reddit-div .go-to1:hover {
+      -webkit-transform: scale(1.05);
+      border-bottom: 2px groove  #E15119; }
+  .reddit-div .slide-up-div {
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    margin-right: 5%;
+    font-size: 200%; }
+    .reddit-div .slide-up-div .slide-up {
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+      height: 100%;
+      width: 100%;
+      color: white; }
+      .reddit-div .slide-up-div .slide-up:hover {
+        color: #0099CC; }
 
 /*# sourceMappingURL=style.css.map */

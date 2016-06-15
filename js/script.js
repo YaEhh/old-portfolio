@@ -12,7 +12,7 @@ $(document).ready(function() {
         // Setting variable for screen size
         anim = false;
         topSkills = "5%";
-        topSkillsImg = "70%";
+        topSkillsImg = "160%";
         heightSkillsImg = "40px";
         widthSkillsImg = "40px";
     }

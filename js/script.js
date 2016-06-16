@@ -76,7 +76,7 @@ $(document).ready(function() {
         name: '[ PHP ]'
     }]
 
-    function scrollTo(destination= $(".intro-div")) {
+    function scrollTo(destination = $(".intro-div")) {
         bod.css("overflow", "auto");
         bod.animate({
             scrollTop: destination.offset().top

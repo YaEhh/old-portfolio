@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,6DAA4D;EAKlD,2BAAI;IACF,IAAI,EAAC,KAAK;EAEZ,6BAAM;IACJ,IAAI,EAAC,IAAI;IACT,GAAG,EAAC,KAAK",
+"sources": ["breakpoint3.scss"],
 "names": [],
 "file": "breakpoint3.css"
 }

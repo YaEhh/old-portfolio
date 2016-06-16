@@ -1,3 +1,8 @@
-
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+  body .reddit-div .redd .imu {
+    left: -100%; }
+  body .reddit-div .redd .clone {
+    left: 300%;
+    top: -200%; } }
 
 /*# sourceMappingURL=breakpoint3.css.map */

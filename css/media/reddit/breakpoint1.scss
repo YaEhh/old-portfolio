@@ -1,4 +1,4 @@
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 
   body {
     .reddit-div{
@@ -36,6 +36,8 @@
         left:0;
         margin:auto;
         height:200px;
+        max-width:450px;
+        max-height: 400px;
 
         button{
           margin:205px 10px;

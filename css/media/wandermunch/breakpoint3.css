@@ -1,3 +1,22 @@
-
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+  body .wandermunch .wm {
+    font-size: 500%;
+    width: 0px;
+    white-space: nowrap;
+    overflow: hidden; }
+    body .wandermunch .wm span {
+      width: 600px; }
+  body .wandermunch .description {
+    display: none; }
+  body .wandermunch .container {
+    left: -40%; }
+  body .wandermunch .go-to-div {
+    left: -40%; }
+    body .wandermunch .go-to-div .go-to {
+      visibility: hidden; }
+  body .wandermunch .slide-up-div {
+    visibility: hidden; }
+  body .wandermunch .slide-down-div {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=breakpoint3.css.map */

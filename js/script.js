@@ -5,12 +5,13 @@ $(document).ready(function() {
     skill = $('.skills');
     imu = $('.imu')
     clone = $('.clone')
-    anim = true;
-    rotateIndex = 0;
 
 
 
-    if (window.matchMedia("(max-width:500px)").matches) {
+
+
+
+    if (window.matchMedia("(max-width:700px)").matches) {
         // Setting variable for screen size
         anim = false;
         topSkills = "5%";
@@ -18,7 +19,24 @@ $(document).ready(function() {
         heightSkillsImg = "40px";
         widthSkillsImg = "40px";
         scrollSpeed = 100;
+        gotoLeft= "0%";
+    } else if (window.matchMedia("(min-width: 701px) and (max-height:767px").matches) {
+        anim = false;
+        scrollSpeed= 1000;
+        // topSkills = "0%";
+        topSkillsImg = "100px";
+        heightSkillsImg = "50px";
+        widthSkillsImg = "50px";
+        gotoLeft = "0%";
+    } else if (window.matchMedia("(min-width:1024px) and (min-height:768px)").matches) {
+        anim = true;
+        topSkillsImg = "100px";
+        heightSkillsImg = "50px";
+        widthSkillsImg = "50px";
+        scrollSpeed = 1000;
+        gotoLeft= "15%";
     }
+
 
     var skills = [{
         cl: "skills0-img",
@@ -81,12 +99,11 @@ $(document).ready(function() {
 
 
         function introAnim() {
-            $(".name-first").show("blind", 1000) && $(".name-last").show("drop", 1000);
+            $(".name-first").show("blind", 2000) && $(".name-last").show("drop", 2500);
             $(".enter-btn").delay(3000).fadeIn(1000);
         }
 
         if (anim == true) {
-            console.log(anim)
             introAnim();
         }
 
@@ -212,6 +229,7 @@ $(document).ready(function() {
 
         $('.slide-up').unbind().click(function() {
             clearInterval(autoSlide);
+            sliderLoop('wander');
             scrollTo($(".wandermunch"));
         });
 
@@ -221,16 +239,20 @@ $(document).ready(function() {
 
     function startwm() {
 
+        console.log(anim);
         //Setting witdth of the title - Animation
-        function wanderAnim() {
+        function wanderAnimTitle() {
+            console.log("wander anim");
             var spanWidth = $('.wm span').width();
+            console.log("span width" + spanWidth)
             $('.wm').animate({
                 width: spanWidth
-            }, 4000, 'swing');
+            }, 2000, 'swing');
         }
 
         if (anim == true) {
-            wanderAnim();
+            console.log(anim);
+            wanderAnimTitle();
         }
 
 
@@ -251,8 +273,9 @@ $(document).ready(function() {
                 $(".go-to").css({
                     visibility: "visible"
                 }).animate({
-                    left: "0px"
+                    left: gotoLeft
                 }, 1000);
+                $(".slide-down-div, .slide-up-div").css({visibility: "visible"})
             }, 1000);
         }
 
@@ -309,6 +332,10 @@ $(document).ready(function() {
                     left: 175,
                     fontSize: "200%"
                 }, 600)
+        }
+
+        if (anim == true ) {
+            redditAnim();
         }
 
 

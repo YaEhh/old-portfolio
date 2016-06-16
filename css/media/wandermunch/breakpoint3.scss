@@ -1,0 +1,40 @@
+@media screen and (min-width:1024px) and (min-height:768px) {
+
+  body {
+    .wandermunch{
+      .wm{
+        font-size:500%;
+        width:0px;
+        white-space: nowrap;
+        overflow: hidden;
+        span{
+          width:600px;
+        }
+      }
+      .description{
+        display:none;
+      }
+
+      .container{
+        left:-40%;
+      }
+      .go-to-div{
+        left:-40%;
+        .go-to{
+          visibility: hidden;
+
+        }
+      }
+
+      .slide-up-div{
+        visibility:hidden;
+      }
+
+      .slide-down-div{
+        visibility: hidden;
+      }
+    }
+
+  }
+
+}

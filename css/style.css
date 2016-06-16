@@ -1,6 +1,12 @@
 @import url(media/intro/breakpoint1.css);
 @import url(media/wandermunch/breakpoint1.css);
 @import url(media/reddit/breakpoint1.css);
+@import url(media/intro/breakpoint2.css);
+@import url(media/wandermunch/breakpoint2.css);
+@import url(media/reddit/breakpoint2.css);
+@import url(media/intro/breakpoint3.css);
+@import url(media/wandermunch/breakpoint3.css);
+@import url(media/reddit/breakpoint3.css);
 @font-face {
   font-family: 'Beyno';
   src: url("../fonts/BEYNO.otf"); }

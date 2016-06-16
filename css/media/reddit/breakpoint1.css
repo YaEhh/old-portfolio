@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   body .reddit-div {
     background-image: url("../../../images/redditmobilecopy.png"); }
     body .reddit-div .redd {
@@ -25,7 +25,9 @@
       top: 320px;
       left: 0;
       margin: auto;
-      height: 200px; }
+      height: 200px;
+      max-width: 450px;
+      max-height: 400px; }
       body .reddit-div .rd-slider button {
         margin: 205px 10px;
         padding: 2px 2px; }

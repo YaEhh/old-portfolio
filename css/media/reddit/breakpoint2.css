@@ -1,3 +1,47 @@
-
+@media screen and (min-width: 701px) and (max-height: 767px) {
+  body .reddit-div {
+    background-image: url("../../../images/reddit.png"); }
+    body .reddit-div .redd .imu {
+      left: 17%;
+      font-size: 200%; }
+    body .reddit-div .redd .clone {
+      top: 0px;
+      left: 145px;
+      font-size: 200%; }
+    body .reddit-div .redd-desc {
+      font-size: 80%;
+      width: 50%;
+      height: auto;
+      left: 0%;
+      margin-left: 5%;
+      top: 130px;
+      display: block;
+      margin-top: 5%;
+      max-width: 500px; }
+    body .reddit-div .slider-container {
+      display: none; }
+    body .reddit-div .rd-slider {
+      width: 50%;
+      position: relative;
+      margin-left: 5%;
+      top: 320px;
+      left: 0%;
+      height: 250px;
+      max-width: 500px;
+      max-height: 250px;
+      margin-top: 5%; }
+      body .reddit-div .rd-slider button {
+        margin: 225px 10px;
+        padding: 2px 2px; }
+    body .reddit-div .slide-up-div {
+      width: 100%;
+      left: 0%;
+      padding-top: 20px; }
+    body .reddit-div .go-to1 {
+      top: 0%;
+      left: 65%;
+      display: block;
+      min-width: 130px;
+      font-size: 80%; } }
 
 /*# sourceMappingURL=breakpoint2.css.map */

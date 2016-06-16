@@ -42,6 +42,7 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0; }
   .intro-div .name-first {

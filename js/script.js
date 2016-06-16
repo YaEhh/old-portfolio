@@ -36,7 +36,7 @@ $(document).ready(function() {
         heightSkillsImg = "50px";
         widthSkillsImg = "50px";
         scrollSpeed = 1000;
-        gotoLeft= "15%";
+        gotoLeft= "17%";
     }
 
 
@@ -307,8 +307,8 @@ $(document).ready(function() {
 
         function redditAnim() {
             $('.redd-logo').delay(800).animate({
-                top: "75%",
-                left: "85%"
+                top: "76%",
+                left: "86%"
             }, 2000)
             $('.go-to1').delay(800).fadeIn("slow", "swing")
             $('.redd-desc').delay(800).fadeIn("slow", "swing")

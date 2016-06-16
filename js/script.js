@@ -3,10 +3,15 @@ $(document).ready(function() {
     bod = $('html body');
     enterbtn = $('.enter-btn');
     skill = $('.skills');
-    imu = $('.imu')
-    clone = $('.clone')
-    scrollSpeed= 100;
-    anim = false;
+    imu = $('.imu');
+    clone = $('.clone');
+    anim = true;
+    rotateBool = true;
+    topSkillsImg = "100px";
+    heightSkillsImg = "50px";
+    widthSkillsImg = "50px";
+    scrollSpeed = 1000;
+    gotoLeft= "17%";
 
 
 
@@ -36,7 +41,7 @@ $(document).ready(function() {
         heightSkillsImg = "50px";
         widthSkillsImg = "50px";
         scrollSpeed = 1000;
-        gotoLeft= "17%";
+        gotoLeft= "16%";
     }
 
 
@@ -88,9 +93,24 @@ $(document).ready(function() {
     }
     scrollTo();
 
+    // $(window).resize(function() {
+    //     if ($(".enter-btn").visible(true)) {
+    //         // console.log(" intro true");
+    //         scrollTo($(".intro-div"));
+    //     }
+    //     if ($(".go_to").visible(true)) {
+    //         // console.log(" intro true");
+    //         scrollTo($(".wandermunch"));
+    //     }
+    //     if ($(".go-to1").visible(true)) {
+    //         // console.log(" intro true");
+    //         scrollTo($(".reddit-div"));
+    //     }
+    // })
+
     function start() {
 
-        $(".enter-btn").unbind().click(function() {
+        enterbtn.unbind().click(function() {
             scrollTo($(".wandermunch"))
             startwm();
         });
@@ -139,7 +159,6 @@ $(document).ready(function() {
                     setTimeout(function() {
                         skill.hide();
                     }, 500)
-
                 }
             }, 1000)
         };
@@ -220,8 +239,6 @@ $(document).ready(function() {
                 scrollTo($(".reddit-div"))
                 clearInterval(autoSlide);
                 startredd();
-
-
         });
 
         $(".slide-up-intro").unbind().click(function() {
@@ -235,39 +252,19 @@ $(document).ready(function() {
             sliderLoop('wander');
             scrollTo($(".wandermunch"));
         });
-
-
-
     }
 
     function startwm() {
 
         console.log(anim);
         //Setting witdth of the title - Animation
-        function wanderAnimTitle() {
+        function wanderAnim() {
             console.log("wander anim");
             var spanWidth = $('.wm span').width();
             console.log("span width" + spanWidth)
             $('.wm').animate({
                 width: spanWidth
             }, 2000, 'swing');
-        }
-
-        if (anim == true) {
-            console.log(anim);
-            wanderAnimTitle();
-        }
-
-
-        // Making sure no other pages show when you resize window.
-        // Definitely shouldn't be here
-        // $(window).resize(function() {
-        //     $('html, body').animate({
-        //         scrollTop: $(".wandermunch").offset().top
-        //     }, 1)
-        // })
-
-        function wanderAnim() {
             setTimeout(function() {
                 $(".description").fadeIn(1000);
                 $('.container').animate({
@@ -283,8 +280,15 @@ $(document).ready(function() {
         }
 
         if (anim == true) {
+            console.log(anim);
             wanderAnim();
         }
+
+
+        // Making sure no other pages show when you resize window.
+        // Definitely shouldn't be here
+
+
         sliderLoop("wander");
 
     };
@@ -312,31 +316,33 @@ $(document).ready(function() {
             }, 2000)
             $('.go-to1').delay(800).fadeIn("slow", "swing")
             $('.redd-desc').delay(800).fadeIn("slow", "swing")
-            imu.animate({
-                left: "27%"
-            }, 1000).rotate({
-                endDeg: 360,
-                persist: true,
-                duration: 1
-            }).animate({
-                fontSize: "200%"
-            })
-            clone.rotate({
-                    endDeg: 90,
-                    persist: false,
-                    duration: 0.2
+            if (rotateBool == true) {
+                imu.animate({
+                    left: "27%"
+                }, 1000).rotate({
+                    endDeg: 360,
+                    persist: true,
+                    duration: 1
                 }).animate({
-                    top: '0px'
-                }).rotate({
-                    endDeg: 0,
-                    persist: true
-                }, 200)
-                .animate({
-                    left: 175,
                     fontSize: "200%"
-                }, 600)
+                })
+                clone.rotate({
+                        endDeg: 90,
+                        persist: true,
+                        duration: 0.2
+                    }).animate({
+                        top: '0px'
+                    }).rotate({
+                        endDeg: 0,
+                        persist: true
+                    }, 200)
+                    .animate({
+                        left: 175,
+                        fontSize: "200%"
+                    }, 600)
+                    rotateBool= false;
+            }
         }
-
         if (anim == true ) {
             redditAnim();
         }
@@ -487,3 +493,72 @@ $.fn.rotate = function(options) {
 
     return $this;
 };
+
+(function($){
+
+    /**
+     * Copyright 2012, Digital Fusion
+     * Licensed under the MIT license.
+     * http://teamdf.com/jquery-plugins/license/
+     *
+     * @author Sam Sehnert
+     * @desc A small plugin that checks whether elements are within
+     *       the user visible viewport of a web browser.
+     *       only accounts for vertical position, not horizontal.
+     */
+    var $w = $(window);
+    $.fn.visible = function(partial,hidden,direction){
+
+        if (this.length < 1)
+            return;
+
+        var $t        = this.length > 1 ? this.eq(0) : this,
+            t         = $t.get(0),
+            vpWidth   = $w.width(),
+            vpHeight  = $w.height(),
+            direction = (direction) ? direction : 'both',
+            clientSize = hidden === true ? t.offsetWidth * t.offsetHeight : true;
+
+        if (typeof t.getBoundingClientRect === 'function'){
+
+            // Use this native browser method, if available.
+            var rec = t.getBoundingClientRect(),
+                tViz = rec.top    >= 0 && rec.top    <  vpHeight,
+                bViz = rec.bottom >  0 && rec.bottom <= vpHeight,
+                lViz = rec.left   >= 0 && rec.left   <  vpWidth,
+                rViz = rec.right  >  0 && rec.right  <= vpWidth,
+                vVisible   = partial ? tViz || bViz : tViz && bViz,
+                hVisible   = partial ? lViz || rViz : lViz && rViz;
+
+            if(direction === 'both')
+                return clientSize && vVisible && hVisible;
+            else if(direction === 'vertical')
+                return clientSize && vVisible;
+            else if(direction === 'horizontal')
+                return clientSize && hVisible;
+        } else {
+
+            var viewTop         = $w.scrollTop(),
+                viewBottom      = viewTop + vpHeight,
+                viewLeft        = $w.scrollLeft(),
+                viewRight       = viewLeft + vpWidth,
+                offset          = $t.offset(),
+                _top            = offset.top,
+                _bottom         = _top + $t.height(),
+                _left           = offset.left,
+                _right          = _left + $t.width(),
+                compareTop      = partial === true ? _bottom : _top,
+                compareBottom   = partial === true ? _top : _bottom,
+                compareLeft     = partial === true ? _right : _left,
+                compareRight    = partial === true ? _left : _right;
+
+            if(direction === 'both')
+                return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop)) && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
+            else if(direction === 'vertical')
+                return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+            else if(direction === 'horizontal')
+                return !!clientSize && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
+        }
+    };
+
+})(jQuery);

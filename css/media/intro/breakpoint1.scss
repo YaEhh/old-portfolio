@@ -14,6 +14,8 @@
           .my-img{
             width:80%;
             margin:auto;
+            z-index: 0;
+            visibility: hidden;
             // margin-top:30%;
           }
           .skills0-img,
@@ -25,11 +27,12 @@
           .skills6-img,
           .skills7-img,
           .skills8-img {
-              // margin:10px;
+              visibility: visible;
           }
           .enter-btn {
               font-size: 70%;
               margin-top:20%;
+              z-index:1;
           }
     }
   }

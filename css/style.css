@@ -83,12 +83,11 @@ body {
     padding: 1px;
     margin: 1%; }
   .intro-div .enter-btn {
-    font-size: 40%;
+    font-size: 70%;
     color: white;
     padding: 0px;
     text-decoration: none;
     display: none;
-    padding: 10px;
     border-radius: 10px 10px 10px;
     text-shadow: 10px 10px 10px black;
     display: block;
@@ -201,7 +200,7 @@ body {
     text-decoration: none;
     -webkit-transition: -webkit-transform 0.5s ease;
     display: inline-block;
-    width: 12%;
+    width: 18%;
     margin-bottom: 5px;
     max-width: 180px; }
   .wandermunch .go-to:hover {

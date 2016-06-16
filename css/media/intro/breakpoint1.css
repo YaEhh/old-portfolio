@@ -6,9 +6,22 @@
       top: 5%; }
     body .intro-div .my-img {
       width: 80%;
-      margin: auto; }
+      margin: auto;
+      z-index: 0;
+      visibility: hidden; }
+    body .intro-div .skills0-img,
+    body .intro-div .skills1-img,
+    body .intro-div .skills2-img,
+    body .intro-div .skills3-img,
+    body .intro-div .skills4-img,
+    body .intro-div .skills5-img,
+    body .intro-div .skills6-img,
+    body .intro-div .skills7-img,
+    body .intro-div .skills8-img {
+      visibility: visible; }
     body .intro-div .enter-btn {
       font-size: 70%;
-      margin-top: 20%; } }
+      margin-top: 20%;
+      z-index: 1; } }
 
 /*# sourceMappingURL=breakpoint1.css.map */

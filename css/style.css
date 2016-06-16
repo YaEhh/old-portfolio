@@ -246,7 +246,8 @@ body {
   height: 100%;
   width: 100%;
   background-image: url("../images/reddit.png");
-  background-size: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   position: absolute;
   top: 200%;
   overflow: hidden;

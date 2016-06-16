@@ -6,6 +6,7 @@ $(document).ready(function() {
     imu = $('.imu')
     clone = $('.clone')
     scrollSpeed= 100;
+    anim = false;
 
 
 
@@ -306,8 +307,8 @@ $(document).ready(function() {
 
         function redditAnim() {
             $('.redd-logo').delay(800).animate({
-                top: "600px",
-                left: "1250px"
+                top: "75%",
+                left: "85%"
             }, 2000)
             $('.go-to1').delay(800).fadeIn("slow", "swing")
             $('.redd-desc').delay(800).fadeIn("slow", "swing")

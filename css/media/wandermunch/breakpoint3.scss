@@ -13,6 +13,7 @@
       }
       .description{
         display:none;
+        height:15%;
       }
 
       .container{
@@ -28,10 +29,12 @@
 
       .slide-up-div{
         visibility:hidden;
+        margin-top:5%;
       }
 
       .slide-down-div{
         visibility: hidden;
+        top:80%;
       }
     }
 

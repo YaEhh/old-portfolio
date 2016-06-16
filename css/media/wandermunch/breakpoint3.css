@@ -7,7 +7,8 @@
     body .wandermunch .wm span {
       width: 600px; }
   body .wandermunch .description {
-    display: none; }
+    display: none;
+    height: 15%; }
   body .wandermunch .container {
     left: -40%; }
   body .wandermunch .go-to-div {
@@ -15,8 +16,10 @@
     body .wandermunch .go-to-div .go-to {
       visibility: hidden; }
   body .wandermunch .slide-up-div {
-    visibility: hidden; }
+    visibility: hidden;
+    margin-top: 5%; }
   body .wandermunch .slide-down-div {
-    visibility: hidden; } }
+    visibility: hidden;
+    top: 80%; } }
 
 /*# sourceMappingURL=breakpoint3.css.map */

@@ -5,6 +5,7 @@ $(document).ready(function() {
     skill = $('.skills');
     imu = $('.imu')
     clone = $('.clone')
+    scrollSpeed= 100;
 
 
 

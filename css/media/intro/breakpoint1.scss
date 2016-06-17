@@ -5,11 +5,11 @@
 
     .intro-div {
           background-image: url("../../../images/bg1mobilecopy.png");
+          font-size:200%;
 
           .skills {
-              font-size: 50%;
-              top:5%;
-
+              font-size: 70%;
+              top:20%;
           }
           .my-img{
             width:80%;
@@ -30,9 +30,11 @@
               visibility: visible;
           }
           .enter-btn {
-              font-size: 70%;
-              margin-top:20%;
+              font-size: 100%;
+              // margin-top:20%;
               z-index:1;
+              text-shadow: 1px 1px 1px black;
+              // top:100%;
           }
     }
   }

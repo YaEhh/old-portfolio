@@ -103,17 +103,19 @@ body {
         text-decoration: none;
         display: none;
         border-radius: 10px 10px 10px;
-        text-shadow: 10px 10px 10px black;
         display:block;
         margin:auto;
+        color: #626465;
+        font-weight: bold;
+        top:30%;
 
     }
     .enter-btn:hover {
         border: none;
         // font-size: 45%;
         transition: all 0.5s ease;
-        text-shadow: 5px 5px 10px black;
-        color: #EBCEAC;
+        text-shadow: 1px 1px 1px #817425;
+        font-weight: bold;
     }
 }
 

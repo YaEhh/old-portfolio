@@ -1,9 +1,10 @@
 @media screen and (max-width: 700px) {
   body .intro-div {
-    background-image: url("../../../images/bg1mobilecopy.png"); }
+    background-image: url("../../../images/bg1mobilecopy.png");
+    font-size: 200%; }
     body .intro-div .skills {
-      font-size: 50%;
-      top: 5%; }
+      font-size: 70%;
+      top: 20%; }
     body .intro-div .my-img {
       width: 80%;
       margin: auto;
@@ -20,8 +21,8 @@
     body .intro-div .skills8-img {
       visibility: visible; }
     body .intro-div .enter-btn {
-      font-size: 70%;
-      margin-top: 20%;
-      z-index: 1; } }
+      font-size: 100%;
+      z-index: 1;
+      text-shadow: 1px 1px 1px black; } }
 
 /*# sourceMappingURL=breakpoint1.css.map */

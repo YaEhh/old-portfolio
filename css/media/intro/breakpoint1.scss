@@ -9,14 +9,14 @@
 
           .skills {
               font-size: 70%;
-              top:20%;
+              top:25%;
           }
           .my-img{
             width:80%;
             margin:auto;
             z-index: 0;
             visibility: hidden;
-            // margin-top:30%;
+            top:15%;
           }
           .skills0-img,
           .skills1-img,
@@ -34,7 +34,8 @@
               // margin-top:20%;
               z-index:1;
               text-shadow: 1px 1px 1px black;
-              // top:100%;
+              margin-top:10%;
+              color:#585858;
           }
     }
   }

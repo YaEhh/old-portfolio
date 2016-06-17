@@ -31,7 +31,7 @@ $(document).ready(function() {
         anim = false;
         scrollSpeed= 1000;
         // topSkills = "0%";
-        topSkillsImg = "100px";
+        topSkillsImg = "5%";
         heightSkillsImg = "50px";
         widthSkillsImg = "50px";
         gotoLeft = "0%";

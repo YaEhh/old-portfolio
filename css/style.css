@@ -53,14 +53,14 @@ body {
   .intro-div .my-img {
     z-index: 1;
     position: relative;
-    top: 30%;
+    top: 0%;
     left: 0;
     height: 10%;
     width: 100%;
     margin: 3%; }
   .intro-div .skills {
     position: relative;
-    top: 30%;
+    top: 0%;
     left: 0px;
     font-size: 40%;
     color: #78C7C7;
@@ -91,9 +91,9 @@ body {
     border-radius: 10px 10px 10px;
     display: block;
     margin: auto;
-    color: #626465;
+    color: #EBCEAC;
     font-weight: bold;
-    top: 30%; }
+    margin-top: 15%; }
   .intro-div .enter-btn:hover {
     border: none;
     transition: all 0.5s ease;

@@ -4,12 +4,13 @@
     font-size: 200%; }
     body .intro-div .skills {
       font-size: 70%;
-      top: 20%; }
+      top: 25%; }
     body .intro-div .my-img {
       width: 80%;
       margin: auto;
       z-index: 0;
-      visibility: hidden; }
+      visibility: hidden;
+      top: 15%; }
     body .intro-div .skills0-img,
     body .intro-div .skills1-img,
     body .intro-div .skills2-img,
@@ -23,6 +24,8 @@
     body .intro-div .enter-btn {
       font-size: 80%;
       z-index: 1;
-      text-shadow: 1px 1px 1px black; } }
+      text-shadow: 1px 1px 1px black;
+      margin-top: 10%;
+      color: #585858; } }
 
 /*# sourceMappingURL=breakpoint1.css.map */

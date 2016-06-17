@@ -157,7 +157,7 @@ $(document).ready(function() {
                 // Hide the last skills text
                 if (skill.text() === " [ PHP ] ") {
                     setTimeout(function() {
-                        skill.hide();
+                        skill.text(" [ FULL STACK ] ");
                     }, 500)
                 }
             }, 1000)

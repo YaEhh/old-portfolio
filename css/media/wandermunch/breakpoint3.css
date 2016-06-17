@@ -8,7 +8,7 @@
       width: 600px; }
   body .wandermunch .description {
     display: none;
-    height: 15%; }
+    height: 10%; }
   body .wandermunch .container {
     left: -40%; }
   body .wandermunch .go-to-div {
@@ -20,6 +20,6 @@
     margin-top: 3%; }
   body .wandermunch .slide-down-div {
     visibility: hidden;
-    top: 80%; } }
+    top: 72%; } }
 
 /*# sourceMappingURL=breakpoint3.css.map */

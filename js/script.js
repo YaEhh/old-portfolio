@@ -37,7 +37,7 @@ $(document).ready(function() {
         gotoLeft = "0%";
     } else if (window.matchMedia("(min-width:1024px) and (min-height:768px)").matches) {
         anim = true;
-        topSkillsImg = "100px";
+        topSkillsImg = "5%";
         heightSkillsImg = "50px";
         widthSkillsImg = "50px";
         scrollSpeed = 1000;

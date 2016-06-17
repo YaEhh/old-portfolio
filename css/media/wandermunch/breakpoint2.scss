@@ -7,18 +7,18 @@
                 height: 1.25em;
                 margin: auto;
                 left: 0%;
-                width:90%;
+                width:0%;
             }
             .description {
+                display: none;
                 padding-top: 3px;
-                height: 15%;
+                height: 10%;
                 width: 50%;
                 margin-left:5%;
                 // margin:auto;
                 position: relative;
                 font-size: 100%;
                 padding-left: 0;
-                display: block;
                 max-width:500px;
                 // text-shadow: 1px 1px 1px black;
                 .built-with {
@@ -28,7 +28,7 @@
             .container {
                 height: 250px;
                 width: 50%;
-                left:0px;
+                left:-100%;
                 max-width:500px;
                 max-height:250px;
                 margin-left:5%;
@@ -40,7 +40,7 @@
                 top: 0;
             }
             .go-to-div {
-                margin-top: 30px;
+                margin-top: 3%;
                 width:60%;
                 max-width:650px;
             }
@@ -50,9 +50,9 @@
                 font-size: 100%;
                 padding: 2px;
                 display: block;
-                margin-bottom: 40px;
+                margin-bottom: 3%;
                 min-width: 140px;
-                visibility: visible;
+                visibility: hidden;
                 margin-left:38%;
                 // width:60%;
                 // width:auto;
@@ -61,10 +61,11 @@
                 position: relative;
                 top: 0;
                 left: 0;
-                margin: 30px 0;
+                margin: 10px 0;
                 width: 60%;
                 font-size: 200%;
                 max-width:650px;
+                visibility: hidden;
                 .slide-up-intro {
                     color: orange;
                     margin: 0;
@@ -72,10 +73,11 @@
             }
             .slide-down-div {
                 position: relative;
-                top: 3%;
+                top: 1%;
                 left: 0;
                 width: 60%;
                 max-width:650px;
+                visibility: hidden;
                 .slide-down {
                     color: orange;
 

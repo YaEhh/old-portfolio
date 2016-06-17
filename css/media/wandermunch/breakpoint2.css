@@ -6,23 +6,23 @@
       height: 1.25em;
       margin: auto;
       left: 0%;
-      width: 90%; }
+      width: 0%; }
     body .wandermunch .description {
+      display: none;
       padding-top: 3px;
-      height: 15%;
+      height: 10%;
       width: 50%;
       margin-left: 5%;
       position: relative;
       font-size: 100%;
       padding-left: 0;
-      display: block;
       max-width: 500px; }
       body .wandermunch .description .built-with {
         margin-top: -1em; }
     body .wandermunch .container {
       height: 250px;
       width: 50%;
-      left: 0px;
+      left: -100%;
       max-width: 500px;
       max-height: 250px;
       margin-left: 5%; }
@@ -30,7 +30,7 @@
       position: relative;
       top: 0; }
     body .wandermunch .go-to-div {
-      margin-top: 30px;
+      margin-top: 3%;
       width: 60%;
       max-width: 650px; }
     body .wandermunch .go-to {
@@ -38,27 +38,29 @@
       font-size: 100%;
       padding: 2px;
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 3%;
       min-width: 140px;
-      visibility: visible;
+      visibility: hidden;
       margin-left: 38%; }
     body .wandermunch .slide-up-div {
       position: relative;
       top: 0;
       left: 0;
-      margin: 30px 0;
+      margin: 10px 0;
       width: 60%;
       font-size: 200%;
-      max-width: 650px; }
+      max-width: 650px;
+      visibility: hidden; }
       body .wandermunch .slide-up-div .slide-up-intro {
         color: orange;
         margin: 0; }
     body .wandermunch .slide-down-div {
       position: relative;
-      top: 3%;
+      top: 1%;
       left: 0;
       width: 60%;
-      max-width: 650px; }
+      max-width: 650px;
+      visibility: hidden; }
       body .wandermunch .slide-down-div .slide-down {
         color: orange; } }
 

@@ -28,7 +28,7 @@ $(document).ready(function() {
         scrollSpeed = 100;
         gotoLeft= "0%";
     } else if (window.matchMedia("(min-width: 701px) and (max-height:767px").matches) {
-        anim = false;
+        anim = true;
         scrollSpeed= 1000;
         // topSkills = "0%";
         topSkillsImg = "5%";

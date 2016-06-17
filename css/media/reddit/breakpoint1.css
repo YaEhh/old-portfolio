@@ -20,16 +20,15 @@
     body .reddit-div .slider-container {
       display: none; }
     body .reddit-div .rd-slider {
-      width: 90%;
+      width: 70%;
       position: relative;
       top: 320px;
       left: 0;
       margin: auto;
-      height: 200px;
-      max-width: 450px;
-      max-height: 400px; }
+      height: 150px;
+      max-width: 350px; }
       body .reddit-div .rd-slider button {
-        margin: 205px 10px;
+        margin: 160px 10px;
         padding: 2px 2px; }
     body .reddit-div .slide-up-div {
       width: 100%;
@@ -40,6 +39,7 @@
       display: block;
       margin: auto;
       min-width: 130px;
-      font-size: 80%; } }
+      font-size: 80%;
+      top: 20%; } }
 
 /*# sourceMappingURL=breakpoint1.css.map */

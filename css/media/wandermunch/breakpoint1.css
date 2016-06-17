@@ -2,7 +2,7 @@
   body .wandermunch {
     background-image: url("../../../images/bg23mobilecopy.png"); }
     body .wandermunch .wm {
-      font-size: 350%;
+      font-size: 300%;
       height: 1.25em;
       margin: auto;
       left: 0%;
@@ -19,17 +19,17 @@
       body .wandermunch .description .built-with {
         margin-top: -1em; }
     body .wandermunch .container {
-      height: 200px;
-      width: 90%;
+      height: 150px;
+      width: 70%;
       left: 0px;
-      max-width: 450px;
+      max-width: 350px;
       margin: auto;
       position: relative; }
     body .wandermunch .container div {
       position: relative;
       top: 0; }
     body .wandermunch button {
-      margin: 210px 10px; }
+      margin: 160px 10px; }
     body .wandermunch .go-to-div {
       margin-top: 30px;
       left: 0; }

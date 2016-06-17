@@ -12,14 +12,16 @@
   body .wandermunch .container {
     left: -40%; }
   body .wandermunch .go-to-div {
-    left: -40%; }
+    left: -40%;
+    margin: 10px; }
     body .wandermunch .go-to-div .go-to {
       visibility: hidden; }
   body .wandermunch .slide-up-div {
     visibility: hidden;
-    margin-top: 3%; }
+    margin-top: 3%;
+    top: 8%; }
   body .wandermunch .slide-down-div {
     visibility: hidden;
-    top: 72%; } }
+    top: 73%; } }
 
 /*# sourceMappingURL=breakpoint3.css.map */

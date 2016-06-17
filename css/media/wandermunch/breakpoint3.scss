@@ -21,6 +21,7 @@
       }
       .go-to-div{
         left:-40%;
+        margin:10px;
         .go-to{
           visibility: hidden;
 
@@ -30,11 +31,12 @@
       .slide-up-div{
         visibility:hidden;
         margin-top:3%;
+        top:8%;
       }
 
       .slide-down-div{
         visibility: hidden;
-        top:72%;
+        top:73%;
       }
     }
 

@@ -397,7 +397,9 @@ body {
         position: absolute;
         top: 120%;
         left: 110%;
+        transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
+        -moz-transfrom: rotate(-45deg);
     }
 
     .rd-slider {

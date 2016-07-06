@@ -319,7 +319,9 @@ body {
     position: absolute;
     top: 120%;
     left: 110%;
-    -webkit-transform: rotate(-45deg); }
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transfrom: rotate(-45deg); }
   .reddit-div .rd-slider {
     max-width: 400%;
     text-align: center;

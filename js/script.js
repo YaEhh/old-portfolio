@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    bod = $('html body');
+    bod = $('body, html');
     enterbtn = $('.enter-btn');
     skill = $('.skills');
     imu = $('.imu');
@@ -84,7 +84,9 @@ $(document).ready(function() {
     }]
 
     function scrollTo(destination) {
-        destination = destination ||  $(".intro-div");
+        if (destination == null) {
+            destination = $(".intro-div");
+        }
         bod.css("overflow", "auto");
         bod.animate({
             scrollTop: destination.offset().top
@@ -93,25 +95,10 @@ $(document).ready(function() {
     }
     scrollTo();
 
-    // $(window).resize(function() {
-    //     if ($(".enter-btn").visible(true)) {
-    //         // console.log(" intro true");
-    //         scrollTo($(".intro-div"));
-    //     }
-    //     if ($(".go_to").visible(true)) {
-    //         // console.log(" intro true");
-    //         scrollTo($(".wandermunch"));
-    //     }
-    //     if ($(".go-to1").visible(true)) {
-    //         // console.log(" intro true");
-    //         scrollTo($(".reddit-div"));
-    //     }
-    // })
-
     function start() {
 
         enterbtn.unbind().click(function() {
-            scrollTo($(".wandermunch"))
+            scrollTo($(".wandermunch"));
             startwm();
         });
 
@@ -122,8 +109,7 @@ $(document).ready(function() {
 
 
         function introAnim() {
-            $(".name-first").show("blind", 1000) && $(".name-last").show("drop", 1500);
-            $(".enter-btn").delay(1000).fadeIn(1000);
+            $(".name-first").show("blind", 100) && $(".name-last").show("drop", 500);
         }
 
         if (anim == true) {
@@ -174,7 +160,6 @@ $(document).ready(function() {
                 itemAmt = items.length;
                 next = $(".next");
                 prev = $(".prev");
-                console.log('wander')
             }
             if (page == "reddit") {
                 currentIndex = 0,
@@ -182,7 +167,6 @@ $(document).ready(function() {
                 itemAmt = items.length;
                 next = $(".next1");
                 prev = $(".prev1");
-                console.log('reddit')
             }
 
         }
@@ -198,7 +182,6 @@ $(document).ready(function() {
                 next.css('visibility', 'visible');
                 prev.css('visibility', 'visible');
             }, 100)
-            console.log(page)
         }
         if (currentIndex == 0){
             cycleItems();
@@ -256,30 +239,26 @@ $(document).ready(function() {
 
     function startwm() {
 
-        console.log(anim);
         function wanderAnim() {
-            console.log("wander anim");
             var spanWidth = $('.wm span').width();
-            console.log("span width" + spanWidth)
             $('.wm').animate({
                 width: spanWidth
-            }, 2000, 'swing');
+            }, 1500, 'swing');
             setTimeout(function() {
                 $(".description").fadeIn(1000);
                 $('.container').animate({
                     left: "0%"
-                }, 1000);
+                }, 500);
                 $(".go-to").css({
                     visibility: "visible"
                 }).animate({
                     left: gotoLeft
-                }, 1000);
+                }, 500);
                 $(".slide-down-div, .slide-up-div").css({visibility: "visible"})
             }, 1000);
         }
 
         if (anim == true) {
-            console.log(anim);
             wanderAnim();
         }
 
